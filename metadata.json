@@ -1,0 +1,6 @@
+{
+  "name": "FC Mobile Pack Simulator",
+  "description": "FC Mobile uslubidagi haqiqiy pack ochish o'yini: Walkout animatsiyalari, TOTY, Iconlar, Klub yig'ish va tarkib tuzish.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-heading {
+    font-family: 'Teko', 'Chakra Petch', sans-serif;
+  }
+
+  .font-display {
+    font-family: 'Chakra Petch', sans-serif;
+  }
+}
+
+/* Card Shape with Authentic FC Mobile angled shield cut */
+.fc-card-cut {
+  clip-path: polygon(
+    10% 0%,
+    90% 0%,
+    100% 8%,
+    100% 92%,
+    90% 100%,
+    10% 100%,
+    0% 92%,
+    0% 8%
+  );
+}
+
+.fc-card-mini-cut {
+  clip-path: polygon(
+    12% 0%,
+    88% 0%,
+    100% 9%,
+    100% 91%,
+    88% 100%,
+    12% 100%,
+    0% 91%,
+    0% 9%
+  );
+}
+
+/* Shimmer scan reflection on card */
+@keyframes fc-shimmer {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  50%, 100% {
+    transform: translateX(200%) skewX(-20deg);
+  }
+}
+
+.animate-fc-shimmer {
+  animation: fc-shimmer 4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Pack Shake Keyframes */
+@keyframes pack-shake {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  20% { transform: rotate(-3deg) scale(1.02); }
+  40% { transform: rotate(3deg) scale(1.03); }
+  60% { transform: rotate(-4deg) scale(1.04); }
+  80% { transform: rotate(4deg) scale(1.05); }
+}
+
+.animate-pack-shake {
+  animation: pack-shake 0.4s ease-in-out infinite;
+}
+
+/* Spotlight Sweep */
+@keyframes spotlight-scan {
+  0%, 100% { transform: rotate(-25deg); opacity: 0.35; }
+  50% { transform: rotate(25deg); opacity: 0.6; }
+}
+
+.animate-spotlight-left {
+  animation: spotlight-scan 3.5s ease-in-out infinite alternate;
+  transform-origin: bottom center;
+}
+
+.animate-spotlight-right {
+  animation: spotlight-scan 3.5s ease-in-out infinite alternate-reverse;
+  transform-origin: bottom center;
+}
+
+/* Walkout Fireworks & Sparks */
+@keyframes walkout-spark {
+  0% { transform: scale(0.8); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+.animate-walkout-glow {
+  animation: walkout-spark 2s infinite ease-in-out;
+}

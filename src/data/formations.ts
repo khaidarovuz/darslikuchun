@@ -1,0 +1,55 @@
+import { Formation } from '../types/game';
+
+export const FORMATIONS: Formation[] = [
+  {
+    id: '4-3-3',
+    name: '4-3-3 Hujumkor',
+    slots: [
+      { slotId: 'gk', position: 'GK', label: 'GK', xPercent: 50, yPercent: 88 },
+      { slotId: 'lb', position: 'LB', label: 'LB', xPercent: 15, yPercent: 70 },
+      { slotId: 'cb1', position: 'CB', label: 'CB', xPercent: 38, yPercent: 72 },
+      { slotId: 'cb2', position: 'CB', label: 'CB', xPercent: 62, yPercent: 72 },
+      { slotId: 'rb', position: 'RB', label: 'RB', xPercent: 85, yPercent: 70 },
+      { slotId: 'cm1', position: 'CM', label: 'CM', xPercent: 25, yPercent: 48 },
+      { slotId: 'cdm', position: 'CDM', label: 'CDM', xPercent: 50, yPercent: 53 },
+      { slotId: 'cm2', position: 'CM', label: 'CM', xPercent: 75, yPercent: 48 },
+      { slotId: 'lw', position: 'LW', label: 'LW', xPercent: 20, yPercent: 22 },
+      { slotId: 'st', position: 'ST', label: 'ST', xPercent: 50, yPercent: 18 },
+      { slotId: 'rw', position: 'RW', label: 'RW', xPercent: 80, yPercent: 22 },
+    ],
+  },
+  {
+    id: '4-4-2',
+    name: '4-4-2 Klassik',
+    slots: [
+      { slotId: 'gk', position: 'GK', label: 'GK', xPercent: 50, yPercent: 88 },
+      { slotId: 'lb', position: 'LB', label: 'LB', xPercent: 15, yPercent: 70 },
+      { slotId: 'cb1', position: 'CB', label: 'CB', xPercent: 38, yPercent: 72 },
+      { slotId: 'cb2', position: 'CB', label: 'CB', xPercent: 62, yPercent: 72 },
+      { slotId: 'rb', position: 'RB', label: 'RB', xPercent: 85, yPercent: 70 },
+      { slotId: 'lm', position: 'LW', label: 'LM', xPercent: 18, yPercent: 46 },
+      { slotId: 'cm1', position: 'CM', label: 'CM', xPercent: 38, yPercent: 48 },
+      { slotId: 'cm2', position: 'CM', label: 'CM', xPercent: 62, yPercent: 48 },
+      { slotId: 'rm', position: 'RW', label: 'RM', xPercent: 82, yPercent: 46 },
+      { slotId: 'st1', position: 'ST', label: 'ST', xPercent: 36, yPercent: 20 },
+      { slotId: 'st2', position: 'ST', label: 'ST', xPercent: 64, yPercent: 20 },
+    ],
+  },
+  {
+    id: '3-5-2',
+    name: '3-5-2 Taktik',
+    slots: [
+      { slotId: 'gk', position: 'GK', label: 'GK', xPercent: 50, yPercent: 88 },
+      { slotId: 'cb1', position: 'CB', label: 'CB', xPercent: 25, yPercent: 72 },
+      { slotId: 'cb2', position: 'CB', label: 'CB', xPercent: 50, yPercent: 74 },
+      { slotId: 'cb3', position: 'CB', label: 'CB', xPercent: 75, yPercent: 72 },
+      { slotId: 'cdm1', position: 'CDM', label: 'CDM', xPercent: 36, yPercent: 56 },
+      { slotId: 'cdm2', position: 'CDM', label: 'CDM', xPercent: 64, yPercent: 56 },
+      { slotId: 'lm', position: 'LW', label: 'LM', xPercent: 12, yPercent: 42 },
+      { slotId: 'cam', position: 'CAM', label: 'CAM', xPercent: 50, yPercent: 38 },
+      { slotId: 'rm', position: 'RW', label: 'RM', xPercent: 88, yPercent: 42 },
+      { slotId: 'st1', position: 'ST', label: 'ST', xPercent: 35, yPercent: 18 },
+      { slotId: 'st2', position: 'ST', label: 'ST', xPercent: 65, yPercent: 18 },
+    ],
+  },
+];
